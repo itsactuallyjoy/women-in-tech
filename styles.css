@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    }
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: whitesmoke;
+    color: black;
+    }
+    
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    }
+    
+header {
+    background-color: purple;
+    padding: 10px 0;
+    }
+    
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+header .logo {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    }
+    
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+    
+header nav ul li {
+    margin-left: 20px;
+    }
+    
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+    }
+
+    
+    
+.hero {
+    position: relative;
+    height: 60vh;
+    background: url('images/WhatsApp\ Image\ 2025-04-06\ at\ 17.26.14_8a386ca7.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    }
+    
+.hero-content {
+    position: relative;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+    }
+    
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: blue;
+    }
+    
+.cta-btn {
+    background-color: purple;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    }
+    
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+    
+
+section {
+    padding: 40px 0;
+    }
+    
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: blue;
+    }
+    
+    
+.about table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    }
+    
+.about th, .about td {
+    border: 1px solid wheat;
+    padding: 10px;
+    text-align: center;
+    }
+    
+.about th {
+    background-color: palevioletred;
+    }
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    }
+    
+    
+.resource-card, .event-card, .mentor-card {
+    background-color: white;
+    width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    }
+    
+.resource-card img, .event-card img, .mentor-card img {
+    width: 100%;
+    height: auto;
+    }
+    
+.resource-card p, .event-card p, .mentor-card p {
+    padding: 10px;
+    }
+    
+    
+.resource-card:hover, .event-card:hover, .mentor-card:hover {
+    transform: scale(1.05);
+    }
+    
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    }
+    
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    }
+    
+.contact button {
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+footer {
+    background-color: #2b2d42;
+    padding: 20px 0;
+    text-align: center;
+    color:white;
+    }
+    
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+.social-icons {
+    margin-bottom: 10px;
+    }
+    
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: larger;
+    transition: color 0.3s;
+    }
+    
+.social-icons a:hover {
+    color: purple;
+    }
+    
+@media (max-width: 768px) {
+    .cards {
+    flex-direction: column;
+    align-items: center;
+    }
+    }
