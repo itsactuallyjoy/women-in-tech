@@ -56,7 +56,7 @@ header nav ul li a {
 .hero {
     position: relative;
     height: 60vh;
-    background: linear-gradient(rgba(128,0,128,0.6),rgba(255,105,180,0.5),url('images/WhatsApp\ Image\ 2025-04-06\ at\ 17.26.14_8a386ca7.jpg') no-repeat center center/cover;
+    background: url('images/WhatsApp\ Image\ 2025-04-06\ at\ 17.26.14_8a386ca7.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
