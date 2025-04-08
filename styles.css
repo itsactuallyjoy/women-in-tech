@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s, color 0.3s;
-    background-color: whitesmoke;
+    background-color:  linear-gradient(rgba(14,8,14,0.6),rgba(231,19,121,0.5));
     color: black;
     }
     
